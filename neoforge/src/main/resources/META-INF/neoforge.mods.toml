@@ -9,6 +9,7 @@ version = "${version}"
 displayName = "Click Through Signs"
 authors = "Bluperman949"
 description = '''
+Open chests (and other interactables) more easily!
 '''
 logoFile = "icon.png"
 

@@ -3,7 +3,7 @@
   "id": "clickthroughsigns",
   "version": "${version}",
   "name": "Click Through Signs",
-  "description": "",
+  "description": "Open chests (and other interactables) more easily!",
   "authors": [
     "Bluperman949"
   ],
