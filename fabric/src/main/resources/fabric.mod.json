@@ -7,8 +7,8 @@
   "authors": [
     "Bluperman949"
   ],
-  "license": "All Rights Reserved",
-  "icon": "assets/clickthroughsigns/icon.png",
+  "license": "MIT",
+  "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
   },
