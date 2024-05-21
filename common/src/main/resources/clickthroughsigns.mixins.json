@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "bluper.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "ServerPlayerMixin",
+    "ChestBlockEntityInvoker"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "clickthroughsigns",
+  "version": "${version}",
+  "name": "Click Through Signs",
+  "description": "",
+  "authors": [
+    "Bluperman949"
+  ],
+  "license": "All Rights Reserved",
+  "icon": "assets/clickthroughsigns/icon.png",
+  "environment": "*",
+  "entrypoints": {
+  },
+  "mixins": [
+    "clickthroughsigns.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
