@@ -9,8 +9,8 @@ architectury {
 }
 
 allprojects {
-    group = rootProject.maven_group
-    version = rootProject.mod_version
+    group = maven_group
+    version = mod_version
 }
 
 subprojects {
@@ -19,7 +19,7 @@ subprojects {
     apply plugin: 'maven-publish'
 
     base {
-        archivesName = "$rootProject.archives_name-$project.name"
+        archivesName = "$archives_name-$project.name-$minecraft_version"
     }
 
     repositories {
@@ -30,7 +30,7 @@ subprojects {
     }
 
     dependencies {
-        minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
+        minecraft "net.minecraft:minecraft:$minecraft_version"
         mappings loom.layered() {
             officialMojangMappings()
             parchment("org.parchmentmc.data:parchment-${parchment_version}@zip")
@@ -46,17 +46,5 @@ subprojects {
 
     tasks.withType(JavaCompile).configureEach {
         it.options.release = 21
-    }
-
-    publishing {
-        publications {
-            mavenJava(MavenPublication) {
-                artifactId = base.archivesName.get()
-                from components.java
-            }
-        }
-
-        repositories {
-        }
     }
 }
